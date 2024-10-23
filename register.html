@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/variables.scss">
+    <link rel="stylesheet" href="src/style/fonts.scss">
+    <link rel="stylesheet" href="src/style/ui.scss">
+    <link rel="stylesheet" href="src/style/style.scss">
+    <title>VisionCloud</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="link header__logo">
+                <img src="src/images/logo/logo.svg" alt="VisionCloud" class="header__logo-img">
+            </a>
+
+            <div class="header__hamburger">
+                <div class="header__hamburger-elem"></div>
+                <div class="header__hamburger-elem"></div>
+                <div class="header__hamburger-elem"></div>
+            </div>
+            <nav class="header__menu header__menu_mobile">
+                <ul class="header__menu-list list">
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Tariffs</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Console</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Suppurt</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Demo</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/login.html" class="link header__login link">Join</a>
+                    </li>
+                    <li class="header__menu-item header__langs">
+                        <div class="header__langs-wrapper">
+                            <a href="#" class="header__menu-link link header__lang header__lang_selected">EN</a>
+                            <a href="#" class="header__menu-link link header__lang">RU</a>
+                            <a href="#" class="header__menu-link link header__lang">ES</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="header__menu">
+                <ul class="header__menu-list list">
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Tariffs</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/console.html" class="header__menu-link link">Console</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/support.html" class="header__menu-link link">Support</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/demo.html" class="header__menu-link link">Demo</a>
+                    </li>
+                    <li class="header__menu-item header__langs">
+                        <div class="header__langs-wrapper">
+                            <a href="#" class="header__menu-link link header__lang header__lang_selected">EN</a>
+                            <a href="#" class="header__menu-link link header__lang">RU</a>
+                            <a href="#" class="header__menu-link link header__lang">ES</a>
+                        </div>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/login.html" class="link header__login">Join</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="auth container">
+            <h1 class="title auth__title">Sign up</h1>
+            <h2 class="auth__subtitle">To get started, you need to sign up here.</h2>
+
+            <form action="POST" class="auth__form" id="first-step">
+                <label class="auth__form-label">
+                    Email
+                    <input type="text" placeholder="Your email" id="email" class="input auth__form-input">
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="agreement" class="checkbox__mark">
+                    <div class="checkbox__checkmark"></div>
+                    I agree to the Terms & conditions
+                </label>
+                <div class="auth__form-switch">
+                    Have an account?
+                    <a href="/login.html" class="link auth__form-link">Login</a>
+                </div>
+                <button class="button auth__button">Continue</button>
+            </form>
+            <form action="POST" class="auth__form auth__form_hidden" id="second-step">
+                <label class="auth__form-label">
+                    Email
+                    <input type="text" placeholder="Your email" id="email-2" class="input auth__form-input">
+                </label>
+                <label class="auth__form-label">
+                    Password
+                    <input type="password" placeholder="Password" id="password" class="input auth__form-input">
+                </label>
+                <label class="auth__form-label">
+                    Confirm Password
+                    <input type="password" placeholder="Password" id="confirm-password" class="input auth__form-input">
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="agreement-2" class="checkbox__mark">
+                    <div class="checkbox__checkmark"></div>
+                    I agree to the Terms & conditions
+                </label>
+                <div class="auth__form-switch">
+                    Have an account?
+                    <a href="/login.html" class="link auth__form-link">Login</a>
+                </div>
+                <button type="submit" class="button auth__button">Create an account</button>
+            </form>
+            <div class="auth__error">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <img src="src/images/logo/logo.svg" alt="VisionCloud" class="logo footer__logo-img">
+            </div>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item footer__navigation-title">Menu</li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Tariffs</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Console</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Support</a>
+                    </li>
+                </ul>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item footer__navigation-title">Social</li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Twitter</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Instagram</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Facebook</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">YouTube</a>
+                    </li>
+                </ul>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item footer__navigation-title">Legal</li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Terms of Use</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Privace Policy</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Legal Notice</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/register.ts"></script>
+    <script type="module" src="/src/scripts/main.ts"></script>
+</body>
+
+</html>

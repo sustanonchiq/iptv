@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/variables.scss">
+    <link rel="stylesheet" href="src/style/fonts.scss">
+    <link rel="stylesheet" href="src/style/ui.scss">
+    <link rel="stylesheet" href="src/style/style.scss">
+    <title>VisionCloud</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="link header__logo">
+                <img src="src/images/logo/logo.svg" alt="VisionCloud" class="header__logo-img">
+            </a>
+
+            <div class="header__hamburger">
+                <div class="header__hamburger-elem"></div>
+                <div class="header__hamburger-elem"></div>
+                <div class="header__hamburger-elem"></div>
+            </div>
+            <nav class="header__menu header__menu_mobile">
+                <ul class="header__menu-list list">
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Tariffs</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Console</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Suppurt</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Demo</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/login.html" class="link header__login link">Join</a>
+                    </li>
+                    <li class="header__menu-item header__langs">
+                        <div class="header__langs-wrapper">
+                            <a href="#" class="header__menu-link link header__lang header__lang_selected">EN</a>
+                            <a href="#" class="header__menu-link link header__lang">RU</a>
+                            <a href="#" class="header__menu-link link header__lang">ES</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="header__menu">
+                <ul class="header__menu-list list">
+                    <li class="header__menu-item">
+                        <a href="/tariffs.html" class="header__menu-link link">Tariffs</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/console.html" class="header__menu-link link">Console</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/support.html" class="header__menu-link link">Support</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/demo.html" class="header__menu-link link">Demo</a>
+                    </li>
+                    <li class="header__menu-item header__langs">
+                        <div class="header__langs-wrapper">
+                            <a href="#" class="header__menu-link link header__lang header__lang_selected">EN</a>
+                            <a href="#" class="header__menu-link link header__lang">RU</a>
+                            <a href="#" class="header__menu-link link header__lang">ES</a>
+                        </div>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/login.html" class="link header__login">Join</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main container">
+        <div class="profile container">
+            <div class="profile__info">
+                <div class="profile__cell profile__balance">
+                    <div class="profile__balance-top">
+                        <h2 class="profile__cell-title">Current balance:</h2>
+                        <div class="profile__balance-value">
+                            120<span class="profile__balance-currency">$</span>
+                        </div>
+                    </div>
+                    <div class="profile__balance-bottom">
+                        <a href="#" class="link profile__link">
+                            <img src="src/images/icons/plus.svg" alt="top up">
+                            Top up balance
+                        </a>
+                        <a href="#" class="link profile__link" id="history-trigger">
+                            View history
+                            <img src="src/images/icons/arrowRightBlue.svg" alt="view">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile__cell profile__tariffs">
+                    <h2 class="profile__cell-title">Tariff:</h2>
+                    <div class="profile__tariffs-top">
+                        <div class="profile__tariff">
+                            <h3 class="profile__tariff-name">Starter</h3>
+                            <span class="profile__tariff-price">8.99</span>
+                            <span class="profile__tariff-time">1 Month</span>
+                        </div>
+                        <div class="profile__tariff">
+                            <h3 class="profile__tariff-name">STANDART</h3>
+                            <span class="profile__tariff-price">24.99</span>
+                            <span class="profile__tariff-time">3 Month</span>
+                        </div>
+                        <div class="profile__tariff">
+                            <h3 class="profile__tariff-name">PREMIUM</h3>
+                            <span class="profile__tariff-price">69.99</span>
+                            <span class="profile__tariff-time">12 Month</span>
+                        </div>
+                    </div>
+                    <div class="profile__tariffs-bottom">
+                        <input type="text" class="profile__tariffs-count input" placeholder="Count of devices">
+                        <button class="button profile__tariffs-button">Buy (50$)</button>
+                    </div>
+                </div>
+                <div class="profile__cell profile__purchases">
+                    <h2 class="profile__cell-title profile__purchases-title">
+                        My purchases
+                        <a href="#" class="link profile__link" id="purchases-trigger">
+                            View more
+                            <img src="src/images/icons/arrowRightBlue.svg" alt="view">
+                        </a>
+                    </h2>
+                    <div class="profile__purchases-info">
+                        <div class="profile__purchases-duration">
+                            Subscription duration:
+                            <span class="profile__purchases-value">
+                                3 months
+                            </span>
+                        </div>
+                        <div class="profile__purchases-data">
+                            Login:
+                            <span class="link profile__purchases-link">
+                                aik.designer
+                                <img src="src/images/icons/copy.svg" alt="copy">
+                            </span>
+                        </div>
+                        <div class="profile__purchases-data">
+                            Password:
+                            <span class="link profile__purchases-link">
+                                pa55vv0rd5132
+                                <img src="src/images/icons/copy.svg" alt="copy">
+                            </span>
+                        </div>
+                        <div class="profile__purchases-data">
+                            URL:
+                            <span class="link profile__purchases-link">
+                                https://itpv.com
+                                <img src="src/images/icons/copy.svg" alt="copy">
+                            </span>
+                        </div>
+                        <div class="profile__purchases-data">
+                            Count of devices:
+                            <span class="link profile__purchases-link">
+                                3
+                            </span>
+                        </div>
+                    </div>
+                    <div class="profile__prompt">
+                        <a href="#" class="link profile__prompt-link">Is something wrong?</a>
+                        Date of End: 02.08.2024
+                    </div>
+                    <div class="progress profile__purchases-progress">
+                        <div class="progress__value" style="width: 100px;"></div>
+                    </div>
+                </div>
+                <div class="profile__cell profile__demo">
+                    <h2 class="profile__cell-title">Demo access</h2>
+                    <div class="profile__demo-info">
+                        <div class="profile__demo-data">
+                            Subscription duration:
+                            <span class="profile__demo-value">72 hours</span>
+                        </div>
+                        <div class="profile__demo-data">
+                            Count of devices:
+                            <span class="profile__demo-value">Unlimited</span>
+                        </div>
+                    </div>
+                    <button class="button profile__demo-button">Try free tiral</button>
+                </div>
+            </div>
+            <a href="#" class="link profile__logout">
+                <img src="src/images/icons/logout.svg" alt="Log Out" class="profile__logout-icon">
+                Log out
+            </a>
+        </div>
+        <!-- <div class="balance container">
+            <h2 class="balance__title title">
+                Current balance:
+                <span class="balance__value">
+                    120
+                </span>
+            </h2>
+            <div class="balance__history">
+                <div class="balance__history-item transaction">
+                    <img src="src/images/icons/mastercard.svg" alt="mastercard" class="transaction__icon">
+                    <div class="transaction__data">
+                        <h3 class="transaction__title">Card **4504</h3>
+                        <span class="transaction__date">2 August 2024</span>
+                    </div>
+                    <span class="transaction__value transaction__value_green">+$50.00</span>
+                </div>
+                <div class="balance__history-item transaction">
+                    <img src="src/images/icons/mastercard.svg" alt="mastercard" class="transaction__icon">
+                    <div class="transaction__data">
+                        <h3 class="transaction__title">Card **4504</h3>
+                        <span class="transaction__date">2 August 2024</span>
+                    </div>
+                    <span class="transaction__value transaction__value_red">-$50.00</span>
+                </div>
+                <div class="balance__history-item transaction">
+                    <img src="src/images/icons/mastercard.svg" alt="mastercard" class="transaction__icon">
+                    <div class="transaction__data">
+                        <h3 class="transaction__title">Card **4504</h3>
+                        <span class="transaction__date">2 August 2024</span>
+                    </div>
+                    <span class="transaction__value transaction__value_green">+$50.00</span>
+                </div>
+                <div class="balance__history-item transaction">
+                    <img src="src/images/icons/mastercard.svg" alt="mastercard" class="transaction__icon">
+                    <div class="transaction__data">
+                        <h3 class="transaction__title">Card **4504</h3>
+                        <span class="transaction__date">2 August 2024</span>
+                    </div>
+                    <span class="transaction__value transaction__value_red">-$50.00</span>
+                </div>
+                <div class="balance__history-item transaction">
+                    <img src="src/images/icons/mastercard.svg" alt="mastercard" class="transaction__icon">
+                    <div class="transaction__data">
+                        <h3 class="transaction__title">Card **4504</h3>
+                        <span class="transaction__date">2 August 2024</span>
+                    </div>
+                    <span class="transaction__value transaction__value_green">+$50.00</span>
+                </div>
+            </div>
+            <a href="/user.html" class="balance__link link">
+                <img src="/src/images/icons/arrowRightBlue.svg" style="transform: rotate(180deg);" alt="Back">
+                Back
+            </a>
+        </div> -->
+
+        <!-- <div class="container purchases-wrapper">
+            <div class="purchases-table">
+                <table class="purchases">
+                    <thead class="purchases__heading">
+                        <tr class="purchases__row">
+                            <th class="purchases__title">Period</th>
+                            <th class="purchases__title">Number</th>
+                            <th class="purchases__title">Login</th>
+                            <th class="purchases__title">Pass</th>
+                            <th class="purchases__title">URL</th>
+                            <th class="purchases__title">Date</th>
+                            <th class="purchases__title">Devices</th>
+                            <th class="purchases__title">Order status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="purchases__row">
+                            <td class="purchases__cell">3 months</td>
+                            <td class="purchases__cell">+17587306280</td>
+                            <td class="purchases__cell">aik.designer</td>
+                            <td class="purchases__cell">pa55vv0rd5132</td>
+                            <td class="purchases__cell">https://itpv.com</td>
+                            <td class="purchases__cell">07.08.24-07.11.24</td>
+                            <td class="purchases__cell">3</td>
+                            <td class="purchases__cell">
+                                <div class="purchases__status purchases__status_green">
+                                    <span class="purchases__status-mark purchases__status-mark_green"></span>
+                                    Active
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="purchases__row">
+                            <td class="purchases__cell">3 months</td>
+                            <td class="purchases__cell">+17587306280</td>
+                            <td class="purchases__cell">aik.designer</td>
+                            <td class="purchases__cell">pa55vv0rd5132</td>
+                            <td class="purchases__cell">https://itpv.com</td>
+                            <td class="purchases__cell">07.08.24-07.11.24</td>
+                            <td class="purchases__cell">3</td>
+                            <td class="purchases__cell">
+                                <div class="purchases__status purchases__status_red">
+                                    <span class="purchases__status-mark purchases__status-mark_red"></span>
+                                    Active
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="purchases__row">
+                            <td class="purchases__cell">3 months</td>
+                            <td class="purchases__cell">+17587306280</td>
+                            <td class="purchases__cell">aik.designer</td>
+                            <td class="purchases__cell">pa55vv0rd5132</td>
+                            <td class="purchases__cell">https://itpv.com</td>
+                            <td class="purchases__cell">07.08.24-07.11.24</td>
+                            <td class="purchases__cell">3</td>
+                            <td class="purchases__cell">
+                                <div class="purchases__status purchases__status_blue">
+                                    <span class="purchases__status-mark purchases__status-mark_blue"></span>
+                                    Active
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="/user.html" class="balance__link purchases__link link">
+                <img src="/src/images/icons/arrowRightBlue.svg" style="transform: rotate(180deg);" alt="Back">
+                Back
+            </a>
+        </div>  -->
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <img src="src/images/logo/logo.svg" alt="VisionCloud" class="logo footer__logo-img">
+            </div>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item footer__navigation-title">Menu</li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Tariffs</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Console</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Support</a>
+                    </li>
+                </ul>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item footer__navigation-title">Social</li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Twitter</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Instagram</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Facebook</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">YouTube</a>
+                    </li>
+                </ul>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item footer__navigation-title">Legal</li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Terms of Use</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Privace Policy</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#" class="footer__navigation-link link">Legal Notice</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/user.ts"></script>
+    <script type="module" src="/src/scripts/main.ts"></script>
+</body>
+
+</html>
